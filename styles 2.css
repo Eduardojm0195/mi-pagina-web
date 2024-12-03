@@ -1,0 +1,186 @@
+.barra {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    position: sticky; /* Mantiene la barra fija en la parte superior */
+    top: 0;
+}
+
+nav ul.barra {
+    list-style-type: none; /* Elimina las viñetas */
+    display: flex; /* Hace que los elementos estén en línea */
+    justify-content: flex-end; /* Espaciado uniforme entre los elementos */
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+   }
+
+nav ul.barra li a {
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 22px; /* Tamaño de letra uniforme */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno (dentro del botón) */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    transition: background-color 0.3s ease; /* Animación suave para hover */
+}
+nav ul.barra li:nth-child(1) a:hover {
+    color: #f66d11; /* Cambio de color al pasar el mouse */
+}
+nav ul.barra li:nth-child(2) a:hover {
+    color: #0adac5;
+}
+
+html, body {
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+}
+
+body{
+    background-image: url(imagenes/yami\ 111111.png);
+    width: auto;
+    height: auto;
+    background-repeat:none ;
+    
+}
+
+.boton button{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color: transparent;
+    outline: none;
+    border:12px;
+}
+
+.boton a{
+    text-decoration: none;
+    color: rgba(5, 5, 5, 0.548);
+    transition: color 0.3s, transform 0.3s;
+}
+.boton {
+    position: absolute;
+    top: 10px;
+    bottom: 10px; 
+    right: 20px; 
+    font-size: 35px; 
+    margin-left: 10px; 
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.map {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%; 
+    overflow: hidden;
+ }
+
+.map iframe {
+    width: 100%; 
+    height: 100%; 
+}
+.boton .fa-instagram:hover {
+    color: #C13584; 
+}
+.boton .fa-facebook:hover {
+    color: #4267B2; 
+}
+
+.contact-form h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #1c1a1ac1;
+    text-align: left; /* Cambiar a 'right' para alinearlo a la derecha */
+}
+
+
+
+.contact-info h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #1c1a1ac1;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    max-width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+ul li{
+    font-size: 25px;
+
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-info .fa-whatsapp {
+    font-size: 50px;
+    color: #25D366; 
+    transition: transform 0.3s, color 0.3s;
+}
+
+
+.fa-whatsapp:hover {
+    transform: scale(1.2); /* Agranda el ícono un 20% */
+    color: #128C7E; /* Cambia ligeramente el tono de verde */
+}
+
+.map iframe {
+    width: 100%; /* Asegura que el iframe ocupe todo el contenedor */
+    height: 100%; /* Coincide con el alto del contenedor */
+    border: 0; /* Elimina bordes */
+}
+
+

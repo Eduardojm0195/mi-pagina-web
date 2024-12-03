@@ -1,0 +1,325 @@
+html, body {
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+}
+body {
+    background-color: #ff9a76; /* Color claro como ejemplo */
+}
+
+.barra {
+    background-color: #637373;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    position: sticky; /* Mantiene la barra fija en la parte superior */
+    top: 0;
+}
+nav ul.barra {
+    list-style-type: none; /* Elimina las viñetas */
+    display: flex; /* Hace que los elementos estén en línea */
+    justify-content: flex-end; /* Espaciado uniforme entre los elementos */
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+nav ul.barra li a {
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 22px; /* Tamaño de letra uniforme */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno (dentro del botón) */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    transition: background-color 0.3s ease; /* Animación suave para hover */
+}
+nav ul.barra li:nth-child(1) a:hover {
+    color: #f66d11; /* Cambio de color al pasar el mouse */
+}
+nav ul.barra li:nth-child(2) a:hover {
+    color: #f66d11;
+}
+nav ul.barra li:nth-child(3) a:hover {
+    color: #f66d11;
+}
+nav ul.barra li:nth-child(4) a:hover {
+    color: #f4435b;
+}
+nav ul.barra li:nth-child(5) a:hover {
+    color: #38ff2d;
+} 
+
+.titulo {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 60px; /* Tamaño del texto */
+    color: #ffffff; /* Color del texto */
+    margin: 80px 0; /* Espaciado arriba y abajo */
+    font-family: Georgia, 'Times New Roman', Times, serif;/* Tipografía */
+}
+ 
+
+.licenciada {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 25px; /* Tamaño del texto */
+    color: #090909; /* Color del texto */
+    margin: -50px 0; /* Espaciado arriba y abajo */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif/* Tipografía */
+    
+}
+
+.imagen-contenedor {
+    position: relative;
+    text-align: center;
+    width:100%;
+    overflow: hidden; /* Evita que la imagen o texto salga del contenedor */
+    margin: 20px auto;
+}
+
+.fondo {
+    width: calc(100% - 20px); /* Reduce el ancho para dejar espacio a los lados */
+    max-width: 1200px; /* Opcional: Define un ancho máximo */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    border-radius: 8%; /* Si quieres mantener bordes redondeados */
+    box-sizing: border-box;
+    opacity: 0.7; /* Mantiene la opacidad */
+}
+.fondo {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor */
+    border-radius: 8%; /* Opcional */
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el texto para que quede completamente centrado */
+   
+    text-align: center;
+
+}
+
+
+.navegador-soc {
+    margin-top: 85px; /* Espaciado superior */
+    display: flex; /* Muestra los logos en línea */
+    justify-content: center; /* Centra los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.navegador-soc a {
+    font-size: 24px; /* Tamaño de los íconos */
+    color: #000; /* Color inicial */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Animación para el hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.navegador-soc a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño un 20% */
+  
+}
+
+
+.navegador-soc a:nth-child(1) {
+    color: #4267B2; /* Azul de Facebook */
+}
+
+.navegador-soc a:nth-child(2) {
+    color: #25D366; /* Verde de WhatsApp */
+}
+
+.navegador-soc a:nth-child(3) {
+    color: #E1306C; /* Rosa de Instagram */
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Estilo de cada artículo */
+.article {
+    flex-basis: calc(50% - 20px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.article {
+    flex-basis: calc(50% - 20px);
+    background-color: #fff;
+    border: 3px solid #637373; /* Color del marco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al interactuar */
+}
+
+.article:hover {
+    transform: scale(1.03); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Incrementa la sombra */
+}
+
+.article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.article a {
+    text-decoration: none;
+    color: #FF5733;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 5px solid #637373; /* Marco sólido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    
+}
+
+/* Contenedor de las imágenes */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo de las imágenes */
+.carousel-inner img {
+    width: 100%;
+    flex-shrink: 0;
+}
+.carousel-text {
+    position: absolute;
+    top: 50%; /* Ajusta para centrar verticalmente */
+    left: 50%; /* Ajusta para centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centra completamente el texto */
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.5rem; /* Tamaño del texto */
+    text-align: center; /* Centrado del texto */
+    white-space: nowrap; /* Evita que el texto se desborde */
+}
+
+
+/* Botones de navegación */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.titulo-terapia {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: #ffffff; /* Color del texto */
+    margin: 30px 0; /* Espaciado arriba y abajo */
+    font-family:'Times New Roman', Times, serif; /* Fuente elegante */
+    text-transform: capitalize; /* Opcional: Cambia mayúsculas/minúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+
+.video-container {
+    text-align: center; /* Centra el iframe horizontalmente */
+    margin-top: 30px; /* Espacio entre el carrusel y el video */
+}
+
+.video-container iframe {
+    display: block; /* Hace que el iframe sea un bloque, permitiendo usar margin:auto */
+    margin: 0 auto; /* Centra el iframe */
+}
+
+body {
+    padding-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+}
+
+@media (max-width: 768px) {
+    .texto-sobre-imagen {
+        top: 45%; /* Mueve el texto un poco más abajo para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .navegador-soc {
+        gap: 10px; /* Reduce el espacio entre íconos en pantallas pequeñas */
+        margin-top: 20px; /* Ajusta el espacio superior */
+    }
+
+    .navegador-soc a {
+        font-size: 20px; /* Reduce el tamaño de los íconos si es necesario */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 10vw; /* Ajusta el tamaño del título en pantallas pequeñas */
+    }
+
+    .licenciada {
+        font-size: 4vw; /* Ajusta el tamaño de 'Yamila Cañete' en pantallas pequeñas */
+    }
+
+    .navegador-soc {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .navegador-soc a {
+        font-size: 7vw; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    }
+}
