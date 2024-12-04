@@ -1,9 +1,9 @@
 html, body {
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina rellenos */
+    margin: 0; 
+    padding: 0; 
 }
 body {
-    background-color: #ff9a76; /* Color claro como ejemplo */
+    background-color: #ff9a76; 
 }
 
 .barra {
@@ -14,11 +14,11 @@ body {
     list-style: none;
     padding: 0;
     z-index: 10;
-    position: sticky; /* Mantiene la barra fija en la parte superior */
+    position: sticky; 
     top: 0;
 }
 nav ul.barra {
-    list-style-type: none; /* Elimina las viñetas */
+    list-style-type: none; 
     display: flex; /* Hace que los elementos estén en línea */
     justify-content: flex-end; /* Espaciado uniforme entre los elementos */
     gap: 10px;
@@ -28,7 +28,7 @@ nav ul.barra {
 nav ul.barra li a {
     text-decoration: none; /* Quita el subrayado */
     font-size: 22px; /* Tamaño de letra uniforme */
-    color: #ffffff; /* Color del texto */
+    color: #ffffff; 
     padding: 10px 20px; /* Espaciado interno (dentro del botón) */
     border-radius: 5px; /* Bordes redondeados opcionales */
     transition: background-color 0.3s ease; /* Animación suave para hover */
@@ -51,8 +51,8 @@ nav ul.barra li:nth-child(5) a:hover {
 
 .titulo {
     text-align: center; /* Centra el texto horizontalmente */
-    font-size: 60px; /* Tamaño del texto */
-    color: #ffffff; /* Color del texto */
+    font-size: 60px; 
+    color: #ffffff; 
     margin: 80px 0; /* Espaciado arriba y abajo */
     font-family: Georgia, 'Times New Roman', Times, serif;/* Tipografía */
 }
@@ -60,8 +60,8 @@ nav ul.barra li:nth-child(5) a:hover {
 
 .licenciada {
     text-align: center; /* Centra el texto horizontalmente */
-    font-size: 25px; /* Tamaño del texto */
-    color: #090909; /* Color del texto */
+    font-size: 25px; 
+    color: #090909; 
     margin: -50px 0; /* Espaciado arriba y abajo */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif/* Tipografía */
     
@@ -77,8 +77,8 @@ nav ul.barra li:nth-child(5) a:hover {
 
 .fondo {
     width: calc(100% - 20px); /* Reduce el ancho para dejar espacio a los lados */
-    max-width: 1200px; /* Opcional: Define un ancho máximo */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 1200px; 
+    margin: 0 auto; 
     height: auto; /* Mantiene la proporción de la imagen */
     display: block;
     border-radius: 8%; /* Si quieres mantener bordes redondeados */
@@ -102,9 +102,9 @@ nav ul.barra li:nth-child(5) a:hover {
 
 
 .navegador-soc {
-    margin-top: 85px; /* Espaciado superior */
+    margin-top: 85px; 
     display: flex; /* Muestra los logos en línea */
-    justify-content: center; /* Centra los íconos */
+    justify-content: center; 
     gap: 15px; /* Espacio entre los íconos */
     text-align: center;
     flex-wrap: wrap;
@@ -125,15 +125,15 @@ nav ul.barra li:nth-child(5) a:hover {
 
 
 .navegador-soc a:nth-child(1) {
-    color: #4267B2; /* Azul de Facebook */
+    color: #4267B2; /*  Facebook */
 }
 
 .navegador-soc a:nth-child(2) {
-    color: #25D366; /* Verde de WhatsApp */
+    color: #25D366; /*  WhatsApp */
 }
 
 .navegador-soc a:nth-child(3) {
-    color: #E1306C; /* Rosa de Instagram */
+    color: #E1306C; /* Instagram */
 }
 
 .articles {
@@ -222,16 +222,16 @@ nav ul.barra li:nth-child(5) a:hover {
 }
 .carousel-text {
     position: absolute;
-    top: 50%; /* Ajusta para centrar verticalmente */
-    left: 50%; /* Ajusta para centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Centra completamente el texto */
-    color: white; /* Color del texto */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 1.5rem; /* Tamaño del texto */
-    text-align: center; /* Centrado del texto */
-    white-space: nowrap; /* Evita que el texto se desborde */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; /
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 1.5rem; 
+    text-align: center; 
+    white-space: nowrap; 
 }
 
 

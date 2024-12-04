@@ -1,6 +1,6 @@
 html, body {
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina rellenos */
+    margin: 0; 
+    padding: 0;
 }
 
 body {
@@ -21,26 +21,26 @@ body {
     list-style: none;
     padding: 0;
     z-index: 10;
-    position: sticky; /* Mantiene la barra fija en la parte superior */
+    position: sticky; 
     top: 0;
 }
 
 nav ul.barra {
-    list-style-type: none; /* Elimina las viñetas */
-    display: flex; /* Hace que los elementos estén en línea */
-    justify-content: flex-end; /* Espaciado uniforme entre los elementos */
+    list-style-type: none; 
+    display: flex; 
+    justify-content: flex-end; 
     padding: 0;
     margin: 0;
     gap: 10px;
    }
 
 nav ul.barra li a {
-    text-decoration: none; /* Quita el subrayado */
-    font-size: 22px; /* Tamaño de letra uniforme */
-    color: #ffffff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno (dentro del botón) */
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    transition: background-color 0.3s ease; /* Animación suave para hover */
+    text-decoration: none; 
+    font-size: 22px; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
 }
 nav ul.barra li:nth-child(1) a:hover {
     color: #f66d11; /* Cambio de color al pasar el mouse */
@@ -50,24 +50,25 @@ nav ul.barra li:nth-child(2) a:hover {
 }
 
 .imagen-circular {
-    width: 150px; /* Tamaño de la imagen (ajústalo según tu preferencia) */
-    height: 150px; /* Debe ser igual al ancho para mantenerla circular */
-    border-radius: 50%; /* Hace que la imagen sea completamente circular */
-    position: absolute; /* Permite posicionar la imagen libremente */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    position: absolute;
     top: 45px; /* Ajusta la distancia desde el borde superior */
-    right: 0px; /* Ajusta la distancia desde el borde derecho */
-    border: 3px solid #000000; /* Opcional: un borde decorativo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para resaltar */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    border: 3px solid #000000; /*  un borde decorativo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra para resaltar */
+    
 }
 
 
 .texto-informativo {
-    width: 80%; /* Ajusta el ancho según lo necesites */
-    max-width: 600px; /* Limita el ancho máximo */
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo transparente con negro para ver el fondo */
+    width: 80%; 
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.4); 
     color: #fff; /* Color del texto (blanco) */
     border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado dentro del contenedor */
+    padding: 10px; /* Espaciado dentro del contenedor */
     text-align: center; /* Centra el texto */
     position: absolute; /* Posiciona el contenedor libremente */
     top: 150px; /* Ajusta la distancia desde la parte superior de la pantalla */
@@ -89,25 +90,25 @@ nav ul.barra li:nth-child(2) a:hover {
     display: flex; /* Flexbox para centrar la imagen */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente dentro de su contenedor */
-    margin-top: 20px; /* Espaciado opcional entre el texto y la imagen */
-    margin-bottom: 20px; /* Espaciado inferior opcional */
+    margin-top: 50px; /* Espaciado opcional entre el texto y la imagen */
+    margin-bottom: -5px; /* Espaciado inferior opcional */
 }
 
 .imagen-final img {
-    width: 100px; /* Tamaño de la imagen */
-    height: 100px; /* Igual al ancho para mantener la proporción */
-    border-radius: 50%; /* Hace la imagen circular */
-    border: 3px solid #000000; /* Borde decorativo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    border: 3px solid #000000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
 
 body {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    justify-content: space-between; /* Deja espacio entre el contenido y el final de la página */
-    min-height: 100vh; /* Hace que el body ocupe la altura completa de la ventana */
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 100vh; 
 }
 
 
